@@ -31,8 +31,9 @@ _cc="$( \
     "cc" \
     "gcc" \
     "clang" | \
-  awk \
-    '{print $1}')"
+  head \
+    -n \
+    1)"
 
 _build() {
   local \
